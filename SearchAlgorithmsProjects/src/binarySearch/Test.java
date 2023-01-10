@@ -1,0 +1,15 @@
+package binarySearch;
+
+public class Test {
+	public static void main(String[] args) {
+		int arr[] = {1, 5, 20, 35, 50, 65, 70};
+	     int x = 50;
+	     BinarySearch b = new BinarySearch();
+	     int result = b.binarySearch(arr, 0, arr.length-1, x);
+	     
+	     if(result == -1)
+	    	 System.out.println("Element is not present in array");
+	     else
+	    	 System.out.println("Element is present at " + result );
+	}
+}
